@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/vue3'
 import Dashboard from '../dashboard.vue'
-import { useBlogStore } from '@/stores'
+import { useBlogStore } from '@/features/store'
 import type { Post } from '../../types/post'
 
 const mockPosts: Post[] = [

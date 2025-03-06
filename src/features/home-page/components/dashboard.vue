@@ -41,7 +41,7 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
 import RecentPost from '@/features/home-page/components/recent-post.vue'
-import { useBlogStore } from '@/stores'
+import { useBlogStore } from '@/features/store'
 import Loading from '@/shared-components/loading.vue'
 
 const store = useBlogStore()

@@ -43,7 +43,7 @@
 import { useRouter } from 'vue-router'
 import { ref } from 'vue'
 import type { Post } from '../types/post'
-import { useBlogStore } from '@/stores'
+import { useBlogStore } from '@/features/store'
 
 const router = useRouter()
 const store = useBlogStore()

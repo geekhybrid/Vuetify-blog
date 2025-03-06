@@ -47,7 +47,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
-import { useBlogStore } from '@/stores'
+import { useBlogStore } from '@/features/store'
 
 const route = useRoute()
 const store = useBlogStore()

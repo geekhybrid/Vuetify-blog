@@ -4,6 +4,7 @@ import type { Post } from '../../types/post'
 import type { ComponentMountingOptions } from '@vue/test-utils'
 import { describe, it, expect, jest } from '@jest/globals'
 import { createVuetify } from 'vuetify'
+import { createPinia } from 'pinia'
 
 describe('RecentPost.vue', () => {
   const createTestPost = (fields?: Partial<Post>): Post => ({
@@ -19,7 +20,7 @@ describe('RecentPost.vue', () => {
     const options: ComponentMountingOptions<typeof RecentPost> = {
       props: { post },
       global: {
-        plugins: [createVuetify()]
+        plugins: [createVuetify(), createPinia()]
       }
     }
     return mount(RecentPost, options)

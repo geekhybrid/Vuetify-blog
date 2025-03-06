@@ -36,7 +36,7 @@ const mockStore = {
   error: null as string | null
 }
 
-jest.mock('@/stores', () => ({
+jest.mock('@/features/store', () => ({
   useBlogStore: () => mockStore
 }))
 
