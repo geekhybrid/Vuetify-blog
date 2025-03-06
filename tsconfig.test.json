@@ -1,0 +1,26 @@
+{
+  "extends": "./tsconfig.app.json",
+  "exclude": [],
+  "compilerOptions": {
+    "composite": true,
+    "lib": [],
+    "types": ["node", "jsdom", "@testing-library/jest-dom"],
+    "allowJs": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "skipLibCheck": true,
+    "verbatimModuleSyntax": false,
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "target": "es2020"
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "src/**/*.test.ts",
+    "src/**/__tests__/**/*",
+    "jest.setup.ts"
+  ]
+}
